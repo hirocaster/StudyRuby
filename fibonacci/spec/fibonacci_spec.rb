@@ -22,4 +22,15 @@ describe "Fibonacci Class" do
     fib = Fibonacci.new
     fib.instance_of?(Fibonacci).should be_true
   end
+
+  it 'fibonacci' do
+    fib = Fibonacci.new(0,1)
+    fib.exec.should eq 1
+    fib.exec.should eq 1
+    fib.exec.should eq 2
+    fib.exec.should eq 3
+    fib.exec.should eq 5
+    fib.exec.should eq 8
+    fib.exec.should eq 13
+  end
 end
